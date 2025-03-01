@@ -1,6 +1,8 @@
 <div>
     <button (click)="onSelectUser()">
+        <!-- only signals and eventhandlers use method calls -->
         <img [src]="imagePath"/>
-        <span>{{selectedUser.name}}</span>
+        <!-- call selectedUser's get/read as method -->
+        <span>{{name()}}</span>
     </button>
 </div>
