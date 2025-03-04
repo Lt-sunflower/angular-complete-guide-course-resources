@@ -1,8 +1,10 @@
-<div>
-    <button [class.active]="selected" (click)="onSelectUser2()">
-        <!-- only signals and eventhandlers use method calls -->
-        <img [src]="imagePath"/>
-        <!-- call selectedUser's get/read as method -->
-        <span>{{user.name}}</span>
-    </button>
-</div>
+<app-card>
+    <div>
+        <button [class.active]="selected" (click)="onSelectUser2()">
+            <!-- only signals and eventhandlers use method calls -->
+            <img [src]="imagePath"/>
+            <!-- call selectedUser's get/read as method -->
+            <span>{{user.name}}</span>
+        </button>
+    </div>
+</app-card>

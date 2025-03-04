@@ -1,13 +1,14 @@
 import { Component, computed, EventEmitter, Input, input, output, Output, signal } from '@angular/core'; //Input is a decorator from angular, input is a special function from the library
 import { DUMMY_USERS } from './dummy-users';
 import { type User } from './user.model';
+import { CardComponent } from "../shared/card/card.component";
 
 const random_int = Math.floor(Math.random() * DUMMY_USERS.length);
 
 @Component({
   selector: 'app-user',
   standalone: true,
-  imports: [],
+  imports: [CardComponent],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css'
 })
